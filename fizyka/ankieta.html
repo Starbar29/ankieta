@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ankieta</title>
+    <style>
+        /* CSS dla niebieskiego tła i czerwonych ramek */
+        body {
+            background-color: blue;
+        }
+
+        input[type="text"],
+        select {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="zapisz_odpowiedzi.php" method="post">
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie"><br><br>
+
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko"><br><br>
+
+        <label for="wiek">Wiek:</label>
+        <input type="text" id="wiek" name="wiek"><br><br>
+
+        <label for="plec">Płeć:</label>
+        <select id="plec" name="plec">
+            <option value="kobieta">Kobieta</option>
+            <option value="mezczyzna">Mężczyzna</option>
+            <option value="inne">Inne</option>
+        </select><br><br>
+
+        <input type="submit" value="Zapisz odpowiedzi">
+    </form>
+</body>
+
+</html>
